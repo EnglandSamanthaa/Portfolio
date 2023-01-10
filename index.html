@@ -18,26 +18,27 @@
 
   <body>
     <canvas id="backgroundCanvas"></canvas>
+    <script src="js/backgroundParticles.js"></script>
     
-    <nav>
-      <ul>
-        <li>home</li>
-        <li>expertise</li>
-        <li>projects</li>
-        <li>experience</li>
+    <section id="navBar">
+      <ul id="navList">
+        <li id="homeNav">home</li>
+        <li id="expertiseNav">expertise</li>
+        <li id="projectsNav">projects</li>
+        <li id="experienceNav">experience</li>
       </ul>
-    </nav>
+    </section>
 
-    <div id="home">
+    <section id="home">
       <h3>Hi, my name is</h3>
       <h1>Samantha England.</h1>
       <h2>Software Developer</h2>
-    </div>
+    </section>
 
 
-    <div id="expertise"></div>
+    <section id="expertise"></section>
     
-    <div id="projects">
+    <section id="projects">
         <div>
           <div class="previewImage">
             <a href="">
@@ -46,16 +47,38 @@
           </div>
           <div class="description"></div>
         </div>
-    </div>
+    </section>
     
-    <div id="experience">
+    <section id="experience">
+      <div>
+        <div>
+          <h2>Full Stack Software Engineer</h2>
+          <h3>100Devs</h3>
+          <h4>Los Angeles, CA (remote)</h4>
+          <h5>2020 - Present</h5>
+        </div>
 
+        <div>
+          <p>Collaborated with a team of developers to build modern and responsive web applications using best practices.</p>
+          <p>Built semantically structured full stack web applications.</p>
+          <p>Applied agile methodologies like SCRUM for project management</p>
+        </div>
+      </div>
 
+      <div>
+        <div>
+          <h2>Full Stack Software Developer</h2>
+          <h4>Davenport, IA</h4>
+          <h5>2019 - Present</h5>
+        </div>
 
+        <div>
+          <p>Created full stack web applications and static websites for different clients
+            across small and medium size businesses</p>
+        </div>
+      </div>
 
-
-
-    </div>
+    </section>
 
 
 
@@ -66,6 +89,7 @@
       </ul>
     </footer>
 
-	<script src="js/main.js"></script>
+	
   </body>
+  <script src="js/main.js"></script>
 </html>
