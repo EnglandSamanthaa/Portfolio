@@ -51,9 +51,6 @@ navList.addEventListener("click", e => {
             expertise.style.display = 'none';
             projects.style.display = 'none';
             experience.style.display = 'flex';
-            
-//          added to see if js changes override css style 
-            experience.style.flex-direction = 'column';
             canvas.style.display = 'none';
 
             console.log('experience')
