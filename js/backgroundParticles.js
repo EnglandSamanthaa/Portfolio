@@ -52,7 +52,7 @@ myImage.addEventListener('load', function(){
             this.y = 0;
             this.speed = 0;
             this.velocity = Math.random() * 2;
-            this.size =Math.random() * .5 + 1;
+            this.size =Math.random() * .5 + 1.5;
             this.position1 = Math.floor(this.y);
             this.position2 = Math.floor(this.x); 
         }

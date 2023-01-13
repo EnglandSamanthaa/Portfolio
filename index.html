@@ -13,17 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
   </head>
 
 
   <body>
     <canvas id="backgroundCanvas"></canvas>
     <script src="js/backgroundParticles.js"></script>
+    <!-- <canvas id="atAGlanceCanvas"></canvas> -->
     
     <section id="navBar">
       <ul id="navList">
         <li id="homeNav">home</li>
-        <li id="expertiseNav">expertise</li>
+        <li id="expertiseNav">about me</li>
         <li id="projectsNav">projects</li>
         <li id="experienceNav">experience</li>
       </ul>
@@ -32,11 +35,39 @@
     <section id="home">
       <h3>Hi, my name is</h3>
       <h1>Samantha England.</h1>
-      <h2>Software Developer</h2>
+      <div id="jobTitleDiv">
+        <hr id="homeSectionLine">
+        <h2>Software Developer</h2>
+      </div>
     </section>
 
 
-    <section id="expertise"></section>
+    <section id="aboutMe">
+      <div>
+        <!-- <p>Hey there!</p>
+        <h2>I'm Samantha.</h2> -->
+
+        <p></p>
+      </div>
+
+      <div id="skillsDiv">
+        <h3>skills</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Sass</li>
+          <li>Javascript</li>
+          <li>jQuery</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>Node.js</li>
+          <li>C#</li>
+          <li>Swift</li>
+          <li>Web Accessibility</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+    </section>
     
     <section id="projects">
         <div>
@@ -60,9 +91,9 @@
         </div>
 
         <div class="jobDetails">
-          <p>Collaborating with a team of developers to build modern and responsive web applications using the best practices.</p>
-          <p>Building semantically structured full stack web applications.</p>
-          <p>Applying agile methodologies like SCRUM for project management.</p>
+          <p>- Collaborating with a team of developers to build modern and responsive web applications using the best practices.</p>
+          <p>- Building semantically structured full stack web applications.</p>
+          <p>- Applying agile methodologies like SCRUM for project management.</p>
         </div>
       </div>
 
@@ -74,7 +105,7 @@
         </div>
 
         <div class="jobDetails">
-          <p>Creating full stack web applications and static websites for different clients across small and medium sized businesses.</p>
+          <p>- Creating full stack web applications and static websites for different clients across small and medium sized businesses.</p>
         </div>
       </div>
 
@@ -84,9 +115,11 @@
 
     <footer>
       <ul>
+        <li><hr id="footerLine1"></li>
         <li><a href="https://www.linkedin.com/in/englandsamanthaa/"><img id="linkedInIcon" src="assets/linkedin.png" alt="LinkedIn"></a></li>
         <li><a href="https://github.com/EnglandSamanthaa"><img id="gitHubIcon" src="assets/github.png" alt="github"></a></li>
       </ul>
+      <p>samanthaenglanddev@gmail.com</p>
     </footer>
 
 	

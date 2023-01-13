@@ -50,19 +50,20 @@ table {
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 #backgroundCanvas{
     position: absolute;
-    top: 75%;
-    left: 50%;
+    top: 82%;
+    left: 70%;
     transform: translate(-50%, -50%);
-    width: 95vw;
-    height: 40vh;
-    opacity: .5;
+    width: 50vw;
+    height: 30vh;
+    opacity: .2;
     mix-blend-mode: screen;
 }
 
+
 body {
     width: 100vw;
-    color: rgb(251, 227, 242);
-    background-color: rgb(161, 0, 105);
+    color: rgb(142, 50, 144);
+    background-color: rgb(52, 39, 153);
 }
 
 #navBar {
@@ -76,7 +77,7 @@ body {
     font-size: 20px;
     z-index: 1;
 } 
-    ul{
+    #navBar ul{
         display: flex;
         flex-direction: row;
         list-style-type: none;
@@ -95,18 +96,43 @@ footer {
     bottom: 0;
     display: flex;
     flex-direction: row;
-    justify-self: flex-end;
-    justify-content: center;
-    width: 100vw;
+    justify-content: space-between;
+    align-content: center;
+    width: 96vw;
     height: 10vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
 }
-    footer li{
-        padding-left: 1vw;
-        padding-bottom: 5vh;
+    hr{
+        background-color: rgb(142, 50, 144);
+        border-color: rgb(142, 50, 144);
+        height: .02vh;
+        width: 12vw;
+        margin-top: 1.3vh
     }
-    #linkedInIcon, #gitHubIcon {
-        height: 30px;
-        width: 30px;
+    footer ul{
+        display: flex;
+        flex-direction: row;
+    }
+        footer li{
+            padding-left: 1vw;
+        }
+            #linkedInIcon, #gitHubIcon {
+                height: 3vh;
+                width: 1.5vw;
+            }
+            #footerLine1{
+                width: 15vw;
+                padding-bottom: 0;   
+            }
+    footer p{
+        width: 13vw;
+        height: 3vh;
+        font-size: 2vh;
+        font-family: 'Gruppo', cursive;
+        background-color: rgb(52, 39, 153);
+        justify-self: flex-end;
+        align-content: center;
     }
 
 
@@ -115,33 +141,82 @@ footer {
  display: flex;
  flex-direction: column;
  justify-content: center;
- height: 80vh;
+ height: 90vh;
  width: 100vw;
  position: absolute;
  bottom: 5;
 
 }
-
-
     #home h3{
         font-size: 35px;
         font-family: 'Rock Salt', cursive;
         padding-bottom: 5vh;   
-        padding-left: 25vw; 
+        padding-left: 35vw; 
     }
     #home h1{
         font-size: 75px;
         font-family: 'Rock Salt', cursive;
         padding-bottom: 5vh;
-        padding-left: 20vw;
+        padding-left: 25vw;
         justify-content: center;
+    }
+    #jobTitleDiv{
+        display: flex;
+        width: 45vw;
+        height: 8vh;
+        align-self: flex-end;
+        align-content: flex-end;
     }
     #home h2{
         font-size: 40px;
         font-family: 'Rowdies', cursive;
         align-self: flex-end;
-        padding-right: 25vw;
+        padding-right: 15vw;
     }
+        #homeSectionLine {
+            margin-top: 5.3vh;
+            height: .3vh;
+            width: 3vw;
+        }
+
+
+
+
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+    height: 98vh;
+
+}
+    #skillsDiv{
+        display: flex; 
+    }
+        #skillsDiv h3{
+            height: 16vh;
+            width: 14vw;
+            font-size: 7vh;
+            font-family: 'Fredericka the Great', cursive;
+            text-align: center;
+            padding: 1vh;
+
+        }
+        #skillsDiv ul{
+            height: 16vh;
+            width: 36vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+            #skillsDiv li{
+                width: 12vw;
+                font-size: 2.5vh;
+                font-family: 'Gruppo', cursive;
+            }
+
+
+
+
 
 #experience {
     display: flex;
@@ -152,17 +227,19 @@ footer {
     bottom: 5;
     justify-content: center;
     font-family: 'Rowdies', cursive;
+
 }
     #experience h1{
         font-size: 75px;
         font-family: 'Rock Salt', cursive;
         padding-bottom: 15vh;
         padding-left: 10vw;
+        opacity: .0;
     }
 
     #experience h2{
         font-size: 45px;
-        padding-left: 40vw;
+        padding-left: 30vw;
         padding-bottom: 1vh
     }
         #experience h2 p{
@@ -172,18 +249,18 @@ footer {
     #experience h3{
         font-size: 30px;
         font-family: 'Rock Salt', cursive;
-        padding-left: 80vw;
+        padding-left: 70vw;
         padding-bottom: 5vh;
     }
 
     #experience div.jobDetails{
-        padding-left: 42vw;
+        padding-left: 32vw;
         font-weight: 300;
         padding-bottom: 8vh;
     }
     #experience div.jobDetails p{
         padding-bottom: .5vh;
-        font-size: 14px;
+        font-size: 16px;
     }
 
 
