@@ -65,9 +65,10 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    color: rgb(136, 196, 248);
-    background-color: rgb(52, 39, 153);
+    color: rgb(250, 146, 221);
+    background-color: rgb(29, 0, 75);
     overflow: hidden;
+    font-family: 'Gruppo', cursive;
 }
 
 #navBar {
@@ -86,8 +87,6 @@ body {
         width: inherit;
     } 
         #navList li{
-            font-family: 'Gruppo', cursive;
-            /* border: 1px solid white; */
             display: inherit;
             justify-content: center;
             padding: 1rem;
@@ -95,8 +94,8 @@ body {
 
 
 hr{
-    background-color: rgb(136, 196, 248);
-    border-color: rgb(136, 196, 248);
+    background-color: rgb(250, 146, 221);
+    border-color: rgb(250, 146, 221);
     height: .0025rem;
 }
 
@@ -119,7 +118,6 @@ hr{
         font-size: 2.4rem;
         font-family: 'Rock Salt', cursive;
         padding-bottom: 1rem;    
-        color: rgb(136, 196, 248);
         position: absolute;
         top: 43%;
         left: 40%;
@@ -200,39 +198,59 @@ hr{
             }
 
 
-
-#experience {
-    display: flex;
-    flex-direction: column;
-    width: 95vw;
-    height: 95vh;
-    position: absolute;
-    bottom: 5;
-    justify-content: center;
-    font-family: 'Rowdies', cursive;
-
-}
     #experience h1{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 30%;
+        top: 15%;
         font-size: 3rem;
         font-family: 'Fredericka the Great', cursive;
     }
-        #experience h2{
-            font-size: 2rem;
-        }
-        #experience p{
-            font-size: 1rem;
-        }
-        #experience h3{
-            font-size: 2.4rem;
-            font-family: 'Rock Salt', cursive;
-        }
+    .job {
+        height: 19rem;
+        width: 60vw;
+        padding: 2rem;
+        position: absolute;
+        left: 23%;
+    }
 
-    #experience div.jobDetails{
-        font-weight: 300;
+    #mostCurrent{
+        top: 20%;
     }
-    #experience div.jobDetails p{
-        font-size: 1rem;
+    #nextMostCurrent{
+        top: 60%
     }
+            #experience h2{
+                font-size: 2rem;
+                font-family: 'Rowdies', cursive;
+            }
+            #experience p{
+                font-size: 1.2rem;
+                padding-left: 1rem;
+            }
+            .job #pastLocation{
+                font-size: 1rem;
+                text-indent: .7rem;
+            }
+            #experience h3{
+                margin-top: -1rem;
+                text-indent: 25rem;
+                font-size: 2.2rem;
+                font-family: 'Rock Salt', cursive;
+            }
+            #pastLocation+h3{
+                margin-top: -2rem;
+            }
+
+        .jobDetails ul{
+            padding: 1rem;
+
+        }
+            .jobDetails li{
+            font-size: 1.3rem;
+            list-style-type:circle;
+            }
+
 
 
     footer {
@@ -264,7 +282,7 @@ hr{
             padding-right: 1.5rem;
             font-size: 1rem;
             font-family: 'Gruppo', cursive;
-            background-color: rgb(52, 39, 153);
+            background-color: rgb(29, 0, 75);;
         }
 
 
@@ -315,6 +333,35 @@ hr{
             width: 21.5rem;
             left: 79%;
         }
+        
+        .job {
+            left: 20%;
+        }
+
+                #experience h2{
+                    font-size: 1.7rem;
+                    font-family: 'Rowdies', cursive;
+                }
+                #experience p{
+                    font-size: 1.1rem;
+                }
+                .job #pastLocation{
+                    font-size: .9rem;
+                    text-indent: .4rem;
+                }
+                #experience h3{
+                    margin-top: -.9rem;
+                    text-indent: 22rem;
+                    font-size: 1.5rem;
+                    font-family: 'Rock Salt', cursive;
+                }
+                #pastLocation+h3{
+                    margin-top: -1.7rem;
+                }
+
+                    .jobDetails li{
+                        font-size: 1.1rem;
+                        }
 
 
             #footerLine1{
