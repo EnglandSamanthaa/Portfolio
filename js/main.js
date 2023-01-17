@@ -18,6 +18,7 @@ navList.addEventListener("click", e => {
 
     let page = e.target.id 
 
+    
     switch(page){
         case "homeNav":
             home.style.display = 'flex';

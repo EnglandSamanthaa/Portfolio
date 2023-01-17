@@ -49,172 +49,155 @@ table {
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 #backgroundCanvas{
-    position: absolute;
-    top: 82%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    width: 50vw;
-    height: 30vh;
-    opacity: .2;
+    opacity: .3;
     mix-blend-mode: screen;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 29vh;
+    width: 50vw;
 }
 
 
 body {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    color: rgb(142, 50, 144);
+    height: 100vh;
+    color: rgb(136, 196, 248);
     background-color: rgb(52, 39, 153);
+    overflow: hidden;
 }
 
 #navBar {
     position: absolute;
     top: 0;
-    height: 5vh;
-    width: 95vw;
-    padding-top: 10vh;
-    padding-right: 5vw;
-    height: 100px;
-    font-size: 20px;
+    width: 100vw;
+    font-size: 1.9rem;
     z-index: 1;
 } 
-    #navBar ul{
+    #navList{
         display: flex;
         flex-direction: row;
         list-style-type: none;
         justify-content: flex-end;
+        height: inherit;
+        width: inherit;
     } 
         #navList li{
-            font-family: 'Rowdies', cursive;
-            justify-items: flex-end;
-            padding-left: 5vw;
+            font-family: 'Gruppo', cursive;
+            /* border: 1px solid white; */
+            display: inherit;
+            justify-content: center;
+            padding: 1rem;
         }
 
-    
 
-footer {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    width: 96vw;
-    height: 10vh;
-    margin-right: 1vh;
-    margin-left: 1vh;
+hr{
+    background-color: rgb(136, 196, 248);
+    border-color: rgb(136, 196, 248);
+    height: .0025rem;
 }
-    hr{
-        background-color: rgb(142, 50, 144);
-        border-color: rgb(142, 50, 144);
-        height: .02vh;
-        width: 12vw;
-        margin-top: 1.3vh
-    }
-    footer ul{
-        display: flex;
-        flex-direction: row;
-    }
-        footer li{
-            padding-left: 1vw;
-        }
-            #linkedInIcon, #gitHubIcon {
-                height: 3vh;
-                width: 1.5vw;
-            }
-            #footerLine1{
-                width: 15vw;
-                padding-bottom: 0;   
-            }
-    footer p{
-        width: 13vw;
-        height: 3vh;
-        font-size: 2vh;
-        font-family: 'Gruppo', cursive;
-        background-color: rgb(52, 39, 153);
-        justify-self: flex-end;
-        align-content: center;
-    }
 
+#home,
+#aboutMe,
+#projects,
+#experience{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
 
         
 #home{
  display: flex;
  flex-direction: column;
- justify-content: center;
- height: 90vh;
- width: 100vw;
- position: absolute;
- bottom: 5;
-
 }
     #home h3{
-        font-size: 35px;
+        font-size: 2.4rem;
         font-family: 'Rock Salt', cursive;
-        padding-bottom: 5vh;   
-        padding-left: 35vw; 
+        padding-bottom: 1rem;    
+        color: rgb(136, 196, 248);
+        position: absolute;
+        top: 43%;
+        left: 40%;
+        transform: translate(-50%, -50%);
     }
     #home h1{
-        font-size: 75px;
+        font-size: 4.5rem;
         font-family: 'Rock Salt', cursive;
-        padding-bottom: 5vh;
-        padding-left: 25vw;
-        justify-content: center;
-    }
-    #jobTitleDiv{
-        display: flex;
-        width: 45vw;
-        height: 8vh;
-        align-self: flex-end;
-        align-content: flex-end;
+        padding-bottom: .5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 53.5rem;
     }
     #home h2{
-        font-size: 40px;
-        font-family: 'Rowdies', cursive;
-        align-self: flex-end;
-        padding-right: 15vw;
+        font-size: 3.5rem;
+        font-family: 'Fredericka the Great', cursive;
+        position: absolute;
+        top: 60%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+        min-width: 32rem;
     }
-        #homeSectionLine {
-            margin-top: 5.3vh;
-            height: .3vh;
-            width: 3vw;
-        }
 
 
 
-
-#aboutMe {
-    display: flex;
-    flex-direction: column;
-    width: 98vw;
-    height: 98vh;
-
-}
-    #skillsDiv{
-        display: flex; 
+    #aboutMe div{
+        display: inherit;
+        position: absolute; 
+        transform: translate(-50%,-50%);
+        font-size: 1.4rem;
+        font-family: 'Gruppo', cursive;
     }
-        #skillsDiv h3{
-            height: 16vh;
-            width: 14vw;
-            font-size: 7vh;
+        #aboutMe h3{
+            display: inherit;
+            height: 4rem;
+            width: 15vw;
+            font-size: 3rem;
             font-family: 'Fredericka the Great', cursive;
-            text-align: center;
-            padding: 1vh;
-
+        
         }
+    #skillsDiv{
+        top: 70%;
+        left: 20%;
+        width: 32rem;
+        flex-direction: column;
+    }
         #skillsDiv ul{
-            height: 16vh;
-            width: 36vw;
+            height: 8rem;
+            width: inherit;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: flex-start;
         }
             #skillsDiv li{
-                width: 12vw;
-                font-size: 2.5vh;
-                font-family: 'Gruppo', cursive;
+                width: 16rem;
+                height: 1.1rem;
+            }      
+    #education{
+        top: 20%;
+        left: 82%;
+        width: 26rem;
+        height: 17vh;
+        flex-direction: column;
+    }
+       #education h3{
+            justify-content: flex-end;
+            width: inherit;
+        }
+        #education ul{
+            width: inherit;
+            height: 7vh;
+        }
+            #education li{
+                display: flex;
+                justify-content: space-between;
             }
-
-
 
 
 
@@ -230,37 +213,298 @@ footer {
 
 }
     #experience h1{
-        font-size: 75px;
-        font-family: 'Rock Salt', cursive;
-        padding-bottom: 15vh;
-        padding-left: 10vw;
-        opacity: .0;
+        font-size: 3rem;
+        font-family: 'Fredericka the Great', cursive;
     }
-
-    #experience h2{
-        font-size: 45px;
-        padding-left: 30vw;
-        padding-bottom: 1vh
-    }
-        #experience h2 p{
-            font-size: 15px;
-            padding-left: 3vw;
+        #experience h2{
+            font-size: 2rem;
         }
-    #experience h3{
-        font-size: 30px;
-        font-family: 'Rock Salt', cursive;
-        padding-left: 70vw;
-        padding-bottom: 5vh;
-    }
+        #experience p{
+            font-size: 1rem;
+        }
+        #experience h3{
+            font-size: 2.4rem;
+            font-family: 'Rock Salt', cursive;
+        }
 
     #experience div.jobDetails{
-        padding-left: 32vw;
         font-weight: 300;
-        padding-bottom: 8vh;
     }
     #experience div.jobDetails p{
-        padding-bottom: .5vh;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
 
+    footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100vw;
+    }
+        footer ul{
+            display: flex;
+            flex-direction: row;
+            width: inherit;
+            padding-bottom: 1rem;
+        }
+            footer li{
+                padding-left: .5rem;
+            }
+                #linkedInIcon, #gitHubIcon {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+                #footerLine1{
+                    width: 12rem;
+                    margin-top: .6125rem;
+                }
+        footer p{
+            width: 15rem;
+            height: inherit;
+            padding-right: 1.5rem;
+            font-size: 1rem;
+            font-family: 'Gruppo', cursive;
+            background-color: rgb(52, 39, 153);
+        }
+
+
+@media (max-width: 64rem){
+    #backgroundCanvas{
+        height: 27vh;
+    }
+
+
+    #navBar {
+        font-size: 1.2rem;
+    }
+
+        #home h1{
+            font-size: 4rem;
+            min-width: 48rem;
+        }
+        #home h2{
+            top: 63%;
+            left: 70%;
+            font-size: 3rem;
+            min-width: 27rem;
+        }
+        #home h3{
+            top: 40%;
+            left: 31%;
+            font-size: 1.9rem;
+        }
+
+    #aboutMe div{
+        font-size: 1.2rem;
+    }
+        #skillsDiv{
+            width: 20rem;
+        }
+            #skillsDiv ul{
+                height: 8rem;
+                width: 20rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+                #skillsDiv li{
+                    width: 10rem;
+                    height: 1.1rem;
+                }
+        #education{
+            width: 21.5rem;
+            left: 79%;
+        }
+
+
+            #footerLine1{
+                width: 10rem;
+            }
+        footer p{
+            width: 13.6rem;
+            font-size: .9rem;
+        }
+}
+
+@media(max-width: 48rem){
+
+        #home h3{
+            top: 43%;
+            font-size: 1.4rem;
+        }
+        #home h1{
+            font-size: 3.5rem;
+            min-width: 42rem;
+        }
+        #home h2{
+            top: 60%;
+            font-size: 2.5rem;
+            min-width: 22.5rem;
+        }
+
+
+    #aboutMe div{
+        font-size: 1rem;
+    }
+        #skillsDiv{
+            width: 17rem;
+        }
+            #skillsDiv ul{
+                height: 8rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+                #skillsDiv li{
+                    width: 8.5rem;
+                    height: 1.1rem;
+                }
+        #education{
+            width: 18rem;
+            left: 79%;
+        }
+    
+
+}
+
+@media (max-width: 26.6rem){
+    #backgroundCanvas{
+        top: 91%;
+        left: 50%;
+        height: 10vh;
+        width: 100vw;
+    }
+
+    #home,
+    #aboutMe,
+    #projects,
+    #experience{
+        justify-content: space-around;
+        padding: 19vh 1rem 0rem;
+    }
+
+    #navBar{
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        
+       
+    }
+            #navList li{
+                padding: 0;
+                width: 25vw;
+                padding-right: 1rem;
+            }
+
+    hr {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+
+        #home h3{
+            top: 42%;
+            left: 40%;
+            font-size: 1rem;
+        }
+        #home h1{
+            font-size: 2.4rem;
+            min-width: 13rem;
+            text-indent: -10rem;
+            left: 60%;
+            line-height: 2.6rem;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        #home h2{
+            top: 58%;
+            left: 75%;
+            font-size: 1.2rem;
+            min-width: 12rem;
+        }
+        #aboutMe h3{
+            width: inherit;
+            height: 4rem;
+        
+        }
+
+        #aboutMe div {
+            flex-direction: column;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            left: 55%;
+        }
+            #aboutMe h3{
+                width: 100vw;
+                height: 3rem;
+            }
+        /* #skillsDiv{
+
+        } */
+            #skillsDiv ul{
+                width: 100vw;
+                height: 7rem;
+                list-style-type: none;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                padding-left: 1rem;
+            }
+                #skillsDiv li{
+                    height: 1rem;
+                    width: 35vw;
+                }
+        #education{
+            top: 50%;
+        }
+        #education h3{
+            justify-content: flex-start;
+        }
+            #education ul{
+                width: 80vw;
+                padding-left: 1rem;
+            }
+
+    
+
+    footer {
+        flex-direction: column;
+    }
+        footer ul{
+            justify-content: center;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            bottom: 1.3%;
+        }
+        footer p{
+            align-self: center;
+            padding: 0;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            bottom: 0%;
+        }
+    }
+
+@media (max-width: 23.5rem){
+    #navBar{
+        font-size: .9rem;
+    }    
+        #navBar li{
+            padding-right: 0;
+        }
+    
+        #home h1{
+            left: 55%;
+            text-indent: -6rem;
+        }
+        #home h2{
+            left: 70%;
+        }
+        #home h3{
+            left: 40%;
+        } 
+
+}
