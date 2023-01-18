@@ -471,13 +471,13 @@ hr{
     #navBar{
         font-size: 1.2rem;
         padding-top: 2rem;
-        
+        width: 97vw;
+   
        
     }
             #navList li{
                 padding: 0;
                 width: 25vw;
-                padding-right: 1rem;
             }
 
     hr {
@@ -547,8 +547,8 @@ hr{
             justify-content: flex-start;
         }
             #education ul{
-                width: 95vw;
-                padding-left: 1rem;
+                width: 90vw;
+                padding-left: 0rem;
             }
     #experience h1{
         left: 35%;
