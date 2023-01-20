@@ -8,6 +8,7 @@ canvas.height = 396;
 
 
 
+
 myImage.addEventListener('load', function(){
 
 
