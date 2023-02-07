@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,8 +65,8 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    color: rgb(250, 146, 221);
-    background-color: rgb(29, 0, 75);
+    color: rgb(237, 218, 232);
+    background-color: rgb(39, 36, 38);
     overflow: hidden;
     font-family: 'Gruppo', cursive;
 }
@@ -95,8 +94,8 @@ body {
 
 
 hr{
-    background-color: rgb(250, 146, 221);
-    border-color: rgb(250, 146, 221);
+    background-color: rgb(237, 218, 232);
+    border-color: rgb(237, 218, 232);
     height: .0025rem;
 }
 
@@ -199,6 +198,63 @@ hr{
             }
 
 
+#projects{
+    width: 98vw;
+    height: 99vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+}
+
+#underContruction{
+    height: 45vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 2.5vw, 0, 2.5vw;
+   
+}
+
+#trafficCone {
+    max-height: 30vh;
+    max-width: 15vw;
+    padding-left: 2.5vw;
+}
+
+#underContruction p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+    .project{
+        height: 30vh;
+        width: 25vw;
+        border: 1px solid red;
+        margin: 6vw 0vw 0vw 6vw;
+    }
+        .previewImage{
+            height: 70%;
+            width: 100%;
+            border: 1px solid red;
+        }
+        .description{
+            height: 30%;
+            width: 100%;
+            border: 1px solid red;
+        }
+
+
     #experience h1{
         position: absolute;
         transform: translate(-50%,-50%);
@@ -255,6 +311,8 @@ hr{
 
 
     footer {
+            position: absolute;
+            bottom: 0%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -283,7 +341,7 @@ hr{
             padding-right: 1.5rem;
             font-size: 1rem;
             font-family: 'Gruppo', cursive;
-            background-color: rgb(29, 0, 75);;
+            background-color: rgb(39, 36, 38);;
         }
 
 
@@ -454,6 +512,12 @@ hr{
 }
 
 @media (max-width: 26.6rem){
+
+    #underContruction p{
+        font-size: 1rem;
+    }
+
+
     #backgroundCanvas{
         top: 91%;
         left: 50%;
