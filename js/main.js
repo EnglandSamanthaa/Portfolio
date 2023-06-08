@@ -1,61 +1,57 @@
-const home = document.getElementById('home');
-const aboutMe = document.getElementById('aboutMe');
-const projects = document.getElementById('projects');
-const experience = document.getElementById('experience');
 
-const navList = document.getElementById('navList');
+// ADD PROJECTS TO PORTFOLIO
+
+let numberOfProjects = 0;
+let projectDisplayWidth = window.innerWidth/numberOfProjects;
+
+class PortfolioProject {
+    constructor(id, project){
+        this.id = id;
+        this.class = "project"
+        this.width = projectDisplayWidth;
+    };
+};
 
 
-window.addEventListener("load", e => {
-    home.style.display = 'flex';
-    aboutMe.style.display = 'none';
-    projects.style.display = 'none';
-    experience.style.display = 'none';
-})
 
+var devsJobTitle = document.getElementById('devsJobTitle');
+var devsJobDescription = document.getElementById('devsJobDescription');
+var devsTech = document.getElementById('devsTech');
+var devsButton = document.getElementById('devsButton');
+var freelanceJobTitle = document.getElementById('freelanceJobTitle');
+var freelanceJobDescription = document.getElementById('freelanceJobDescription');
+var freelanceTech = document.getElementById('freelanceTech');
+var freelanceButton = document.getElementById('freelanceButton');
 
-navList.addEventListener("click", e => {
+addEventListener("load", (event) => {
+    freelanceJobTitle.style.display = "none";
+    freelanceJobDescription.style.display = "none";
+    freelanceTech.style.display = "none";
+    devsButton.style.fontWeight = "600";
+});
 
-    let page = e.target.id 
+freelanceButton.addEventListener("click", (event) => {
+    freelanceJobTitle.style.display = "block";
+    freelanceJobDescription.style.display = "block";
+    freelanceTech.style.display = "block";
 
-    
-    switch(page){
-        case "homeNav":
-            home.style.display = 'flex';
-            aboutMe.style.display = 'none';
-            projects.style.display = 'none';
-            experience.style.display = 'none';
-            canvas.style.display = 'block';
+    devsJobTitle.style.display = "none";
+    devsJobDescription.style.display = "none";
+    devsTech.style.display = "none";
 
-            console.log('home');
-            break;
-        case "expertiseNav":
-            home.style.display = 'none'
-            aboutMe.style.display = 'flex';
-            projects.style.display = 'none';
-            experience.style.display = 'none';
-            canvas.style.display = 'none';
+    freelanceButton.style.fontWeight = "600";
+    devsButton.style.fontWeight = "300";
+});
 
-            console.log('aboutMe');
-            break;
-        case 'projectsNav':
-            home.style.display = 'none'
-            aboutMe.style.display = 'none';
-            projects.style.display = 'flex';
-            experience.style.display = 'none';
-            canvas.style.display = 'none';
+devsButton.addEventListener("click", (event) => {
+    devsJobTitle.style.display = "block";
+    devsJobDescription.style.display = "block";
+    devsTech.style.display = "block";
 
-            console.log('projects');
-            break;
-        case 'experienceNav': 
-            home.style.display = 'none';
-            aboutMe.style.display = 'none';
-            projects.style.display = 'none';
-            experience.style.display = 'flex';
-            canvas.style.display = 'none';
+    freelanceJobTitle.style.display = "none";
+    freelanceJobDescription.style.display = "none";
+    freelanceTech.style.display = "none";
 
-            console.log('experience')
-            break;
-    }
-    
-})
+    freelanceButton.style.fontWeight = "300";
+    devsButton.style.fontWeight = "600";
+});
