@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Samantha England</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
   </head>
 
 
-  <body>
+  <body id="homeScreenBody">
     <section id="navBar">
         <ul id="navList">
           <li><a href="index.html">home</a></li>
@@ -34,10 +34,12 @@
         </ul>
     </section>
 
+    <canvas id="homeScreenCanvas"></canvas>
+
     <section id="home">
-      <h3>Hi, I am</h3>
-      <h1>Samantha England.</h1>
-      <p>I am a Web Developer that loves to create elegant and functional websites! Whether you're a small business owner looking to establish an online presence, or a larger company seeking to revamp your website and looking for a new team member, I've got you covered. With a passion for design and a keen eye for detail, I specialize in crafting visually stunning websites that are both user-friendly and easy to navigate. Take a look at my portfolio and let's work together to bring your vision to life.</p>
+      <h3 id="introHThree">Hi, I am</h3>
+      <h1 id="name">Samantha England.</h1>
+      <p id="introParagraph">I am a Web Developer that loves to create elegant and functional websites! Whether you're a small business owner looking to establish an online presence, or a larger company seeking to revamp your website and looking for a new team member, I've got you covered. With a passion for design and a keen eye for detail, I specialize in crafting visually stunning websites that are both user-friendly and easy to navigate. Take a look at my portfolio and let's work together to bring your vision to life.</p>
     </section>
 
 
@@ -51,5 +53,6 @@
     </footer>
 
   </body>
+  <script src="js/meteoriteBackground.js"></script>
   <script src="js/main.js"></script>
 </html>
