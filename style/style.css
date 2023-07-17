@@ -59,7 +59,10 @@ body {
     overflow: hidden;
     font-family: 'Gruppo', cursive;
     background-image: url("/assets/homescreenBackgroundImage.jpg");
-}
+    background-position: center;
+    background-size: 125vw;
+    background-repeat: no-repeat;
+}   
 
 #navBar {
     position: absolute;
