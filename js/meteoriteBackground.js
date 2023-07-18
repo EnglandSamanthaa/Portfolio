@@ -34,6 +34,9 @@ window.addEventListener('load', function() {
 
             if (this.x > this.effect.width || this.x < 0) this.vx *= -1;
             if (this.y > this.effect.height || this.y < 0) this.vy *= -1;
+
+            if(this.effect.width <= 430) this.xv = Math.random() * 1;
+            this.xy = Math.random() * 1; 
         }
 
     }
@@ -49,6 +52,7 @@ window.addEventListener('load', function() {
         }
 
         createParticles(){
+            if (this.width <= 430) this.numberOfParticles = 100;
             for(let i = 0; i < this.numberOfParticles; i++){
                 this.particles.push(new Particle(this));
             }
