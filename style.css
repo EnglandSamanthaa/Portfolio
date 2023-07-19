@@ -47,6 +47,14 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 body {
@@ -57,31 +65,38 @@ body {
     color: rgb(237, 218, 232);
     overflow: hidden;
     font-family: 'Gruppo', cursive;
-
 }   
 
 #navBar {
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 5%;
-    right: 5%;
+    top: 87%;
+    align-content: flex-end;
     width: 100vw;
-    font-size: 1.9rem;
+    font-size: 2rem;
+    font-weight: bolder;
     z-index: 1;
 } 
     #navList{
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        justify-content: flex-end;
+        justify-content: center;
         height: inherit;
         width: inherit;
     } 
         #navList li{
             display: inherit;
             justify-content: center;
+            align-self: center;
             padding: 1rem;
-            
+            border: 2px solid rgb(33, 216, 248);
+            border-radius: 25px;
+            width: 200px;
+            background-color: rgb(0, 48, 90);
+            margin: 20px;
+        }
+        #aboutMeBody #navList li{
+            border: none;
         }
 
         #navList a:link,
@@ -114,7 +129,49 @@ canvas{
     top: 0;
 }
 
-        
+     
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 98%;
+    margin: 1%;
+}
+    footer ul{
+        display: flex;
+        flex-direction: row;
+    }
+        footer li{
+            padding: .5rem;
+        }
+            #linkedInIcon, #gitHubIcon {
+                padding-top: .1rem;
+                height: 2rem;
+                width: 2rem;
+            }
+    footer p{
+        padding: .5rem;
+        font-size: 1.3rem;
+        font-family: 'Gruppo', cursive;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #home{
  display: flex;
  flex-direction: column;
@@ -125,7 +182,7 @@ canvas{
 }
 
 #interactiveCanvas{
-    height: 600px;
+    height: 400px;
     width: 400px;
     background-color: black;
     position: absolute;
@@ -138,126 +195,160 @@ canvas{
         font-family: 'Indie Flower', cursive;
         padding-bottom: 1rem;    
         position: absolute;
-        top: 28%;
-        left: 20%;
-        transform: translate(-50%, -50%);
+        bottom: 70%;
+        left: 12%;
+        transform: rotate(-8deg);
     }
     #home h1{
         font-size: 8rem;
         font-family: 'Cabin Sketch', cursive;
         padding-bottom: .5rem;
         position: absolute;
-        top: 38%;
-        left: 45%;
-        transform: translate(-50%, -50%);
+        bottom: 70%;
+        left: 10%;
         min-width: 85rem;
+        transform: rotate(-10deg);
     }
-    #home p{
+    #introParagraph { 
         font-size: 1.6rem;
         font-family: 'Indie Flower', cursive;
         position: absolute;
         line-height: 1.8rem;
-        top: 61%;
-        left: 26%;
-        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 13%;
         width: 600px;
-       
-
+        text-align: center;
     }
+    #introParagraph p{
+        margin: 1%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 #aboutMe{
-   
     background-image: url("assets/someScreenBackground.jpg");
     background-color: black;
-    background-position:left;
-    background-size: 125vw;
+    background-position: contain;
     background-repeat: no-repeat;
     color: rgb(123, 199, 0);
-
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    line-height: 2rem;
 }
 
+#aboutMeLists, #aboutMeSummary{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    height: 80%;
+    margin: 3% 5%;
+}
 
-    #aboutMe section{
-        position: absolute;
-        transform: translate(-50%, -50%);
-       
-    }
-
-        #aboutMe h2{
-            font-size: 5rem;
-            font-family: 'Fredericka the Great', cursive;
-        }
-        #aboutMe h3{
-            display: inherit;
-            height: 4rem;
-            width: 15vw;
-            font-size: 3rem;
-            font-family: 'Fredericka the Great', cursive;
-        }
     #aboutMeSummary{
-        flex-direction: column;
-        height: 90vh;
-        width: 45vw;
-        top: 85%;
-        left: 25%;
-    }
-        #aboutMeSummary p{
-            font-size: 1.4rem;
-            font-weight: bold;
-            padding: .5rem;
-        }
-    #skillsDiv, #skillsDiv h3{
-        top: 55%;
-        left: 85%;
-        width: 25rem;
-        flex-direction: column;
-        text-align: right;
+        width: 50%;
+        justify-content: flex-end;
     
-    }
-        #skillsDiv ul{
-            width: inherit;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
+    } 
+        #aboutMeSummary div{
+            margin: 3%;
         }
-            #skillsDiv li{
-                width: 50%;
-                height: 1.8rem;
-                font-weight: 700;
-                font-size: 1.4rem;
-            }      
-    #education{
-        top: 85%;
-        left: 85%;
-        width: 25rem;
-        height: 17vh;
-        flex-direction: column;
-    }
-        #education h3{
-            justify-content: flex-end;
-            width: inherit;
-            text-align: right;
-        }
-        #education ul{
-            width: inherit;
-            height: 7vh;
-        }
-            #education li{
-                display: flex;
-                justify-content: space-between;
-                height: 1.8rem;
-                font-weight: 700;
-                font-size: 1.4rem;
+            #aboutMeSummary h2{
+                position: absolute;
+                bottom: 87%;
+                font-family: 'Cabin Sketch', cursive;
+                font-size: 4rem;
+                transform: rotate(-20deg);
             }
-    #sendEmail{
-        left: 82%;
-        top: 80%;
-        width: 32rem;
-        height: 30vh;
+            #aboutMeSummary p{
+                padding: 2px;
+                text-align: center;
+                margin: 1%;
+                font-family: 'Indie Flower', cursive;
+                font-size: 1.3rem;
+                line-height: 1.7rem;
+            }
+
+   
+    #aboutMeLists{
+        width: 30%;
     }
+
+#skillsDiv, #education{
+    width: 93%;
+    border-radius: 25px;
+    background-color: rgb(192, 133, 247);
+    color: black;
+    margin: 3%;
+}
+
+#education{
+    height: 175px;
+}
+    #skillsDiv h3, #education h3{
+        font-size: 3rem;
+        padding: 20px;
+        border-radius: 25px;
+        background-color: rgb(30, 0, 58);
+        color: rgb(237, 218, 232);
+        text-align: center;
+        font-weight: bolder;
+    }
+    #skillsDiv ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 3%;
+        padding-left: 30px;
+        
+    }
+    #education ul{
+    padding-left: 20px;
+    padding-top: 10px;
+    }
+        #skillsDiv li, #education li{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        #skillsDiv li{
+            width: 50%;
+        }
+        #education li{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    #education p{
+        text-align: right;
+        padding-right: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -300,8 +391,6 @@ canvas{
     font-size: 1.5rem;
     text-align: center;
 }
-
-
     .project{
         height: 30vh;
         width: 25vw;
@@ -319,18 +408,33 @@ canvas{
             border: 1px solid red;
         }
 
+
         
-#experience h2, #experience p, #experience ul, #experience h4{
-    color:rgb(110, 36, 79);
+
+
+
+
+
+
+#bodyExperience{
+    background-image: url('assets/backgroundForExperience.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+#experience h2, #experience h1, #experience p, #experience ul, #experience h4{
+    color:rgb(40, 0, 58);
 }
 #experience h1 {
     font-size: 6rem;
+    font-weight: bolder;
     height: 7rem;
     width: 92rem;
     position: absolute;
-    transform: translate(-50%, -50%);
-    left: 59%;
-    bottom: 65%;
+    left: 5%;
+    top: 3%;
 }
 
 #experience h3{
@@ -345,17 +449,19 @@ canvas{
     padding: .3rem;
     padding-left: 1rem;
     text-align: left;
-    background-color: rgb(110, 36, 79);
-    border: 2px solid black;
+    background-color: rgb(40, 0, 58);
+    border: 2px solid rgb(0, 124, 226);
     border-radius: 25px;
 }
 
 #devsButton{
-    top: 67%;
+    top: 30%;
+    left: 17%;
     font-weight: 600;
 }
 #freelanceButton{
-    top: 73%; 
+    top: 24%; 
+    left: 17%;
 }
 
 #experience h2 {
@@ -365,138 +471,198 @@ canvas{
     text-align: left;
     position: absolute;
     transform: translate(-50%, -50%);
-    left: 53%;
-    bottom: 55%;
+    left: 50%;
+    bottom: 70%;
 }
 
-.jobContainer {
-    border: 1px rgb(10, 10, 10) solid;
+#jobContainer {
+    border: 3px rgb(0, 124, 226) solid;
     border-radius: 25px;
-    height: 27rem;
     width: 70rem;
-    background-color: rgb(243, 181, 217);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    bottom: -1%;
-    left: 52%;
-
-}
-
-.jobTitle p{
-    font-size: 1rem;
-    height: 2rem;
-    width: 65rem;
-    text-align: left;
+    background-color: rgb(46, 163, 192);
     position: absolute;
     transform: translate(-50%, -50%);
-    left: 53%;
-    bottom: 53%;
-    padding-left: .5rem;
+    left: 50%;
 }
 
-.jobDescription{
-    font-size: 1.5rem;
-    height: 10rem;
-    width: 65rem;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 53%;
-    bottom: 27%;
-} 
-.techUsed{
-    height: 3rem;
-    width: 65rem;
-    font-size: 1.3rem;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 53%;
-    bottom: 25%;
-}
-.techUsed h4{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.techUsed ul{
-    display: flex;
-}
-.techUsed li{
-    padding: 1rem;
-}
-
-
-footer {
-    position: absolute;
-    bottom: 0%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
-}
-    footer ul{
-        display: flex;
-        flex-direction: row;
-        width: inherit;
-        padding-bottom: 1rem;
-    }
-        footer li{
-            padding-left: .5rem;
+        .jobTitle p{
+            font-size: 1.2rem;
+            height: 2rem;
+            width: 65rem;
+            text-align: left;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            bottom: 68%;
+            padding-left: 1rem;
         }
-            #linkedInIcon, #gitHubIcon {
-                height: 1.5rem;
-                width: 1.5rem;
-            }
-            #footerLine1{
-                width: 12rem;
-                margin-top: .6125rem;
-            }
-    footer p{
-        width: 15rem;
-        height: inherit;
-        padding-right: 1.5rem;
-        font-size: 1rem;
-        font-family: 'Gruppo', cursive;
+
+    .jobDescription{
+        font-size: 1.5rem;
+        width: 65rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
+        .jobDescription p{
+            padding: 2.5px;
+            line-height: 1.5rem;
+            letter-spacing: .7px;
+        }
+    .techUsed{
+        height: 3rem;
+        width: 65rem;
+        font-size: 1.3rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
     }
+        .techUsed h4{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .techUsed ul{
+            display: flex;
+            justify-content: space-around;
+        }
+            .techUsed li{
+                padding: 1rem;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 64rem){
     #navBar {
-        font-size: 1.2rem;
-        left: 45%;
-    }
+        position: absolute;
+        top: 1%;
+        align-content: flex-end;
+        width: 100vw;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        z-index: 1;
+    } 
+            #navList li{
+                width: 110px;
+            }
 
        #home h1{
             top: 25%;
             left: 75%;
-            font-size: 4rem;
+            font-size: 3rem;
             width: 400px;
         }
         #home h3{
             top: 20%;
             left: 30%;
-            font-size: 2.5rem;
+            font-size: 2rem;
             width: 400px;
         }
         #home p{
             top: 53%;
             left: 28%;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             width: 400px;
         }
     #interactiveCanvas{
-        height: 500px;
+        height: 300px;
         width: 300px;
         left: 75%;
-        top: 60%;
+        top: 50%;
     }
 
-            #footerLine1{
-                width: 10rem;
-            }
-        footer p{
-            width: 13.6rem;
-            font-size: .9rem;
+    #aboutMeSummary{
+        width: 60%;
+        margin: 1.5%;
+        position: relative;
+        top: 10%;
+    
+    } 
+        #aboutMeSummary div{
+            margin: .5%;
         }
+            #aboutMeSummary h2{
+                position: relative;
+                top: -15%;;
+                font-size: 3rem;
+            }
+            #aboutMeSummary p{
+                padding: 1px;
+                margin: .5%;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+    #aboutMeLists{
+        width: 40%;
+        position: relative;
+        top: 10%;
+    
+    }
+        #skillsDiv, #education{
+            width: 93%;
+            border-radius: 25px;
+            background-color: rgb(192, 133, 247);
+            color: black;
+        }
+        #education{
+            height: 150px;
+        }
+            #skillsDiv h3, #education h3{
+                font-size: 1.7rem;
+            }
+                #skillsDiv ul{
+                    width: 100%;
+                    padding-left: 15px;
+                }
+                #education ul{
+                    padding-left: 15px;
+                    padding-top: 5px;
+                }
+                    #skillsDiv li, #education li{
+                        font-size: 1rem;
+                    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 48rem){
 
@@ -527,6 +693,15 @@ footer {
         top: 73%;
     }    
 }
+
+
+
+
+
+
+
+
+
 
 
 
